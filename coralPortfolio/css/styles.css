@@ -1,0 +1,758 @@
+
+/* ---------------------- Global :root Section --------------------------------------------------------------------------------- */
+
+:root {
+    /* Primary Colors - Pink Cafe Inspired Theme */
+    --color-primary: #E8B4B8;           /* Soft rose pink */
+    --color-primary-dark: #D18D92;      /* Deeper rose */
+    --color-primary-light: #F5D7DA;     /* Light pink */
+    
+    /* Primary Color Opacity Variants (0.2 increments) */
+    --color-primary-opacity-20: rgba(232, 180, 184, 0.2);
+    --color-primary-opacity-40: rgba(232, 180, 184, 0.4);
+    --color-primary-opacity-60: rgba(232, 180, 184, 0.6);
+    --color-primary-opacity-80: rgba(232, 180, 184, 0.8);
+    
+    --color-primary-dark-opacity-20: rgba(209, 141, 146, 0.2);
+    --color-primary-dark-opacity-40: rgba(209, 141, 146, 0.4);
+    --color-primary-dark-opacity-60: rgba(209, 141, 146, 0.6);
+    --color-primary-dark-opacity-80: rgba(209, 141, 146, 0.8);
+    
+    --color-primary-light-opacity-20: rgba(245, 215, 218, 0.2);
+    --color-primary-light-opacity-40: rgba(245, 215, 218, 0.4);
+    --color-primary-light-opacity-60: rgba(245, 215, 218, 0.6);
+    --color-primary-light-opacity-80: rgba(245, 215, 218, 0.8);
+    
+    /* Accent Colors */
+    --color-accent: #C89B7B;            /* Terracotta/caramel */
+    --color-accent-dark: #B8886A;       /* Deeper terracotta */
+    
+    /* Accent Color Opacity Variants */
+    --color-accent-opacity-20: rgba(200, 155, 123, 0.2);
+    --color-accent-opacity-40: rgba(200, 155, 123, 0.4);
+    --color-accent-opacity-60: rgba(200, 155, 123, 0.6);
+    --color-accent-opacity-80: rgba(200, 155, 123, 0.8);
+    
+    --color-accent-dark-opacity-20: rgba(184, 136, 106, 0.2);
+    --color-accent-dark-opacity-40: rgba(184, 136, 106, 0.4);
+    --color-accent-dark-opacity-60: rgba(184, 136, 106, 0.6);
+    --color-accent-dark-opacity-80: rgba(184, 136, 106, 0.8);
+    
+    /* Neutral Colors - Coffee Inspired */
+    --color-dark: #3D2B1F;              /* Espresso brown */
+    --color-dark-secondary: #5C4A3C;    /* Medium brown */
+    --color-light: #FAF7F4;             /* Cream/off-white */
+    --color-beige: #F5E6E3;             /* Warm beige */
+    
+    /* Dark Color Opacity Variants */
+    --color-dark-opacity-20: rgba(61, 43, 31, 0.2);
+    --color-dark-opacity-40: rgba(61, 43, 31, 0.4);
+    --color-dark-opacity-60: rgba(61, 43, 31, 0.6);
+    --color-dark-opacity-80: rgba(61, 43, 31, 0.8);
+    
+    --color-dark-secondary-opacity-20: rgba(92, 74, 60, 0.2);
+    --color-dark-secondary-opacity-40: rgba(92, 74, 60, 0.4);
+    --color-dark-secondary-opacity-60: rgba(92, 74, 60, 0.6);
+    --color-dark-secondary-opacity-80: rgba(92, 74, 60, 0.8);
+    
+    /* Background Colors */
+    --bg-primary: #FFFFFF;              /* Pure white */
+    --bg-secondary: #FEFBF9;            /* Warm white */
+    --bg-accent: #FAF7F4;               /* Light cream */
+    
+    /* Background Color Opacity Variants */
+    --bg-primary-opacity-20: rgba(255, 255, 255, 0.2);
+    --bg-primary-opacity-40: rgba(255, 255, 255, 0.4);
+    --bg-primary-opacity-60: rgba(255, 255, 255, 0.6);
+    --bg-primary-opacity-80: rgba(255, 255, 255, 0.8);
+    
+    --bg-secondary-opacity-20: rgba(254, 251, 249, 0.2);
+    --bg-secondary-opacity-40: rgba(254, 251, 249, 0.4);
+    --bg-secondary-opacity-60: rgba(254, 251, 249, 0.6);
+    --bg-secondary-opacity-80: rgba(254, 251, 249, 0.8);
+    
+    --bg-accent-opacity-20: rgba(250, 247, 244, 0.2);
+    --bg-accent-opacity-40: rgba(250, 247, 244, 0.4);
+    --bg-accent-opacity-60: rgba(250, 247, 244, 0.6);
+    --bg-accent-opacity-80: rgba(250, 247, 244, 0.8);
+    
+    /* Text Colors */
+    --text-primary: #3D2B1F;            /* Dark brown */
+    --text-secondary: #5C4A3C;          /* Medium brown */
+    --text-light: #FFFFFF;              /* White */
+    --text-muted: #8B6F5E;              /* Muted brown */
+    
+    /* Text Color Opacity Variants */
+    --text-primary-opacity-20: rgba(61, 43, 31, 0.2);
+    --text-primary-opacity-40: rgba(61, 43, 31, 0.4);
+    --text-primary-opacity-60: rgba(61, 43, 31, 0.6);
+    --text-primary-opacity-80: rgba(61, 43, 31, 0.8);
+    
+    --text-secondary-opacity-20: rgba(92, 74, 60, 0.2);
+    --text-secondary-opacity-40: rgba(92, 74, 60, 0.4);
+    --text-secondary-opacity-60: rgba(92, 74, 60, 0.6);
+    --text-secondary-opacity-80: rgba(92, 74, 60, 0.8);
+    
+    --text-muted-opacity-20: rgba(139, 111, 94, 0.2);
+    --text-muted-opacity-40: rgba(139, 111, 94, 0.4);
+    --text-muted-opacity-60: rgba(139, 111, 94, 0.6);
+    --text-muted-opacity-80: rgba(139, 111, 94, 0.8);
+    
+    /* Interactive Colors */
+    --color-hover: #D18D92;             /* Hover state */
+    --color-active: #C89B7B;            /* Active state */
+    --color-link: #D18D92;              /* Link color */
+    --color-link-hover: #B8886A;        /* Link hover */
+    
+    /* Interactive Color Opacity Variants */
+    --color-hover-opacity-20: rgba(209, 141, 146, 0.2);
+    --color-hover-opacity-40: rgba(209, 141, 146, 0.4);
+    --color-hover-opacity-60: rgba(209, 141, 146, 0.6);
+    --color-hover-opacity-80: rgba(209, 141, 146, 0.8);
+    
+    --color-active-opacity-20: rgba(200, 155, 123, 0.2);
+    --color-active-opacity-40: rgba(200, 155, 123, 0.4);
+    --color-active-opacity-60: rgba(200, 155, 123, 0.6);
+    --color-active-opacity-80: rgba(200, 155, 123, 0.8);
+    
+    --color-link-opacity-20: rgba(209, 141, 146, 0.2);
+    --color-link-opacity-40: rgba(209, 141, 146, 0.4);
+    --color-link-opacity-60: rgba(209, 141, 146, 0.6);
+    --color-link-opacity-80: rgba(209, 141, 146, 0.8);
+    
+    --color-link-hover-opacity-20: rgba(184, 136, 106, 0.2);
+    --color-link-hover-opacity-40: rgba(184, 136, 106, 0.4);
+    --color-link-hover-opacity-60: rgba(184, 136, 106, 0.6);
+    --color-link-hover-opacity-80: rgba(184, 136, 106, 0.8);
+    
+    /* Border & Shadow Colors */
+    --border-color: #E8B4B8;           /* Soft pink borders */
+    --border-light: #F5D7DA;            /* Very light pink borders */
+    
+    /* Border Color Opacity Variants */
+    --border-color-opacity-20: rgba(232, 180, 184, 0.2);
+    --border-color-opacity-40: rgba(232, 180, 184, 0.4);
+    --border-color-opacity-60: rgba(232, 180, 184, 0.6);
+    --border-color-opacity-80: rgba(232, 180, 184, 0.8);
+    
+    --border-light-opacity-20: rgba(245, 215, 218, 0.2);
+    --border-light-opacity-40: rgba(245, 215, 218, 0.4);
+    --border-light-opacity-60: rgba(245, 215, 218, 0.6);
+    --border-light-opacity-80: rgba(245, 215, 218, 0.8);
+    
+    /* Pre-defined Shadow Colors (already with opacity) */
+    --shadow-color: rgba(232, 180, 184, 0.2);  /* Pink-tinted shadows */
+    --shadow-dark: rgba(61, 43, 31, 0.1);       /* Subtle brown shadows */
+    
+    /* Additional Shadow Opacity Variants */
+    --shadow-color-opacity-40: rgba(232, 180, 184, 0.4);
+    --shadow-color-opacity-60: rgba(232, 180, 184, 0.6);
+    --shadow-color-opacity-80: rgba(232, 180, 184, 0.8);
+    
+    --shadow-dark-opacity-20: rgba(61, 43, 31, 0.2);
+    --shadow-dark-opacity-40: rgba(61, 43, 31, 0.4);
+    --shadow-dark-opacity-60: rgba(61, 43, 31, 0.6);
+    
+    /* Gradient Colors */
+    --gradient-primary: linear-gradient(135deg, #E8B4B8 0%, #D18D92 100%);
+    --gradient-accent: linear-gradient(135deg, #C89B7B 0%, #B8886A 100%);
+    --gradient-hero: linear-gradient(135deg, #E8B4B8 0%, #C89B7B 100%);
+
+    /* Gradient Opacity Variants */
+    --gradient-primary-opacity-20: linear-gradient(135deg, var(--color-primary-opacity-20) 0%, var(--color-primary-dark-opacity-20) 100%);
+    --gradient-primary-opacity-40: linear-gradient(135deg, var(--color-primary-opacity-40) 0%, var(--color-primary-dark-opacity-40) 100%);
+    --gradient-primary-opacity-60: linear-gradient(135deg, var(--color-primary-opacity-60) 0%, var(--color-primary-dark-opacity-60) 100%);
+    --gradient-primary-opacity-80: linear-gradient(135deg, var(--color-primary-opacity-80) 0%, var(--color-primary-dark-opacity-80) 100%);
+
+    --gradient-accent-opacity-20: linear-gradient(135deg, var(--color-accent-opacity-20) 0%, var(--color-accent-dark-opacity-20) 100%);
+    --gradient-accent-opacity-40: linear-gradient(135deg, var(--color-accent-opacity-40) 0%, var(--color-accent-dark-opacity-40) 100%);
+    --gradient-accent-opacity-60: linear-gradient(135deg, var(--color-accent-opacity-60) 0%, var(--color-accent-dark-opacity-60) 100%);
+    --gradient-accent-opacity-80: linear-gradient(135deg, var(--color-accent-opacity-80) 0%, var(--color-accent-dark-opacity-80) 100%);
+
+    --gradient-hero-opacity-20: linear-gradient(135deg, var(--color-primary-opacity-20) 0%, var(--color-accent-opacity-20) 100%);
+    --gradient-hero-opacity-40: linear-gradient(135deg, var(--color-primary-opacity-40) 0%, var(--color-accent-opacity-40) 100%);
+    --gradient-hero-opacity-60: linear-gradient(135deg, var(--color-primary-opacity-60) 0%, var(--color-accent-opacity-60) 100%);
+    --gradient-hero-opacity-80: linear-gradient(135deg, var(--color-primary-opacity-80) 0%, var(--color-accent-opacity-80) 100%);
+
+        /* ==================== Layout & Spacing Variables ==================== */
+    
+    /* Max Widths */
+    --max-site-width: 1200px;              /* Maximum site width */
+    --max-content-width: 800px;            /* Maximum content width for text-heavy sections */
+    --max-form-width: 600px;               /* Maximum form width */
+    --container-padding: 20px;              /* Horizontal padding for containers */
+    
+    /* Spacing Scale */
+    --spacing-xs: 0.25rem;                 /* 4px */
+    --spacing-sm: 0.5rem;                  /* 8px */
+    --spacing-md: 1rem;                    /* 16px */
+    --spacing-lg: 1.5rem;                  /* 24px */
+    --spacing-xl: 2rem;                    /* 32px */
+    --spacing-2xl: 2.5rem;                 /* 40px */
+    --spacing-3xl: 3rem;                   /* 48px */
+    --spacing-4xl: 4rem;                   /* 64px */
+    
+    /* Padding */
+    --padding-xs: var(--spacing-xs);
+    --padding-sm: var(--spacing-sm);
+    --padding-md: var(--spacing-md);
+    --padding-lg: var(--spacing-lg);
+    --padding-xl: var(--spacing-xl);
+    --padding-2xl: var(--spacing-2xl);
+    --padding-3xl: var(--spacing-3xl);
+    
+    /* Margins */
+    --margin-xs: var(--spacing-xs);
+    --margin-sm: var(--spacing-sm);
+    --margin-md: var(--spacing-md);
+    --margin-lg: var(--spacing-lg);
+    --margin-xl: var(--spacing-xl);
+    --margin-2xl: var(--spacing-2xl);
+    --margin-3xl: var(--spacing-3xl);
+    
+    /* Gaps (for flexbox/grid) */
+    --gap-xs: var(--spacing-xs);
+    --gap-sm: var(--spacing-sm);
+    --gap-md: var(--spacing-md);
+    --gap-lg: var(--spacing-lg);
+    --gap-xl: var(--spacing-xl);
+    --gap-2xl: var(--spacing-2xl);
+    
+    /* Section Spacing */
+    --section-padding: var(--spacing-3xl);
+    --section-padding-mobile: var(--spacing-xl);
+    
+    /* ==================== Typography Variables ==================== */
+    
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;               /* 12px */
+    --font-size-sm: 0.875rem;              /* 14px */
+    --font-size-base: 1rem;                /* 16px */
+    --font-size-md: 1.125rem;              /* 18px */
+    --font-size-lg: 1.25rem;               /* 20px */
+    --font-size-xl: 1.5rem;                /* 24px */
+    --font-size-2xl: 2rem;                  /* 32px */
+    --font-size-3xl: 3rem;                 /* 48px */
+    --font-size-4xl: 4rem;                 /* 64px */
+    
+    /* Line Heights */
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.6;
+    --line-height-loose: 1.8;
+    
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.025em;
+    --letter-spacing-wider: 0.05em;
+    
+    /* ==================== Border & Radius Variables ==================== */
+    
+    /* Border Radius */
+    --radius-none: 0;
+    --radius-sm: 0.25rem;                  /* 4px */
+    --radius-md: 0.5rem;                   /* 8px */
+    --radius-lg: 0.75rem;                  /* 12px */
+    --radius-xl: 1rem;                     /* 16px */
+    --radius-2xl: 1.5rem;                  /* 24px */
+    --radius-full: 9999px;                 /* Full circle */
+    
+    /* Border Width */
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 3px;
+    
+    /* ==================== Shadow Variables ==================== */
+    
+    /* Shadow Sizes */
+    --shadow-sm: 0 1px 2px var(--shadow-dark-opacity-20);
+    --shadow-md: 0 2px 10px var(--shadow-color-opacity-20);
+    --shadow-lg: 0 4px 15px var(--shadow-color-opacity-40);
+    --shadow-xl: 0 8px 25px var(--shadow-dark-opacity-40);
+    --shadow-2xl: 0 12px 40px var(--shadow-dark-opacity-60);
+    
+    /* ==================== Transition Variables ==================== */
+    
+    /* Duration */
+    --transition-fast: 0.15s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+    
+    /* Easing */
+    --ease-in: ease-in;
+    --ease-out: ease-out;
+    --ease-in-out: ease-in-out;
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Combined Transitions */
+    --transition-default: var(--transition-normal) var(--ease-smooth);
+    --transition-hover: var(--transition-fast) var(--ease-out);
+    
+    /* ==================== Z-Index Scale ==================== */
+    
+    --z-index-base: 1;
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+    
+    /* ==================== Breakpoints (for reference in media queries) ==================== */
+    
+    /* Note: These are for reference. Use in media queries like: */
+    /* @media (min-width: var(--breakpoint-md)) { ... } */
+    --breakpoint-xs: 320px;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1440px;
+    
+    /* ==================== Component Specific Sizes ==================== */
+    
+    /* Navigation */
+    --nav-height: 60px;
+    --nav-padding: var(--spacing-md);
+    
+    /* Buttons */
+    --button-padding-y: 12px;
+    --button-padding-x: 30px;
+    --button-radius: var(--radius-md);
+    
+    /* Form Elements */
+    --input-padding-y: 12px;
+    --input-padding-x: var(--spacing-md);
+    --input-radius: var(--radius-md);
+    --input-border-width: var(--border-width-medium);
+    
+    /* Cards */
+    --card-padding: var(--spacing-2xl);
+    --card-radius: var(--radius-xl);
+    --card-gap: var(--gap-xl);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: var(--line-height-relaxed);
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    background-image: url('https://picsum.photos/1920/1080?random=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: var(--font-size-base);
+    backdrop-filter: blur(3px);
+}
+
+/* ---------------------- Navigaton Section ------------------------------------------------------------------------------------- */
+
+.navbar {
+    background-color: var(--color-dark);
+    color: var(--text-light);
+    padding: var(--nav-padding) 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-fixed);
+}
+
+.nav-container {
+    max-width: var(--max-site-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--nav-height);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: var(--gap-lg);
+}
+
+.nav-link-active {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition-default);
+    position: relative;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    padding: var(--padding-xs) var(--padding-sm);
+}
+
+.nav-link-active:hover {
+    color: var(--color-primary);
+}
+
+.nav-link-active.active {
+    color: var(--color-primary);
+}
+
+.nav-link-active.active::after {
+    content: ''; 
+    position: absolute;
+    bottom: calc(var(--spacing-xs) * -1);
+    left: var(--spacing-sm);
+    width: calc(100% - var(--spacing-md));
+    height: var(--border-width-medium);
+    background-color: var(--color-primary);
+    border-radius: var(--radius-sm);
+}
+
+/* ---------------------- Main Content Section ----------------------------------------------------------------------------- */
+
+.main-content {
+    max-width: var(--max-site-width);
+    margin: 0 auto;
+    padding: var(--section-padding) var(--container-padding);
+    min-height: calc(100vh - var(--nav-height) - 200px);
+}
+
+
+/* ---------------------- Hero Content Section ----------------------------------------------------------------------------- */
+.hero {
+    backdrop-filter: blur(5px);
+}
+.hero {
+    text-align: center;
+    padding: var(--spacing-4xl) var(--spacing-2xl);
+    background: var(--gradient-hero-opacity-80);
+    color: var(--text-light);
+    border-radius: var(--radius-2xl);
+    margin-bottom: var(--margin-3xl);
+    box-shadow: var(--shadow-lg);
+    
+}
+
+.hero h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--margin-md);
+    text-shadow: var(--shadow-dark-opacity-40);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.hero p {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--margin-2xl);
+    opacity: 0.95;
+    line-height: var(--line-height-relaxed);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    background-color: var(--text-light);
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    border-radius: var(--button-radius);
+    font-weight: var(--font-weight-semibold);
+    transition: var(--transition-default);
+    box-shadow: var(--shadow-md);
+    font-size: var(--font-size-base);
+}
+
+.cta-button:hover {
+    box-shadow: var(--shadow-lg);
+    background-color: var(--color-beige);
+}
+
+/* ---------------------- About Content Section ----------------------------------------------------------------------------- */
+
+.content-section {
+    background: var(--bg-primary-opacity-80);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    margin-bottom: var(--margin-md);
+    box-shadow: var(--shadow-sm);
+    border: var(--border-width-thin) solid var(--border-light);
+    backdrop-filter: blur(3px);
+}
+
+.content-section h2 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--margin-md);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+}
+
+.content-section h3 {
+    color: var(--color-accent-dark);
+    margin-top: var(--margin-lg);
+    margin-bottom: var(--margin-md);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.content-section p {
+    margin-bottom: var(--margin-md);
+    color: var(--text-secondary);
+    line-height: var(--line-height-loose);
+    font-size: var(--font-size-base);
+}
+
+.content-section ul {
+    margin-left: var(--margin-2xl);
+    color: var(--text-secondary);
+    line-height: var(--line-height-loose);
+}
+
+.content-section li {
+    margin-bottom: var(--margin-sm);
+    font-size: var(--font-size-base);
+}
+
+/* ---------------------- Services Grid Section ----------------------------------------------------------------------------- */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--card-gap);
+    margin-top: var(--margin-xl);
+}
+
+.service-card {
+    background: var(--bg-primary-opacity-80);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-default);
+    border: var(--border-width-thin) solid var(--border-light);
+    backdrop-filter: blur(3px);
+}
+
+.service-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-color-opacity-60);
+}
+
+.service-card h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--margin-md);
+    font-size: var(--font-size-xl);
+    font-weight: var(--line-height-loose);
+    line-height: var(--line-height-tight);
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    line-height: var(--line-height-loose);
+    font-size: var(--font-size-base);
+}
+
+/* ---------------------- Contact Form Section ----------------------------------------------------------------------------- */
+
+.contact-form {
+    max-width: var(--max-form-width);
+    margin: 0 auto;
+    background: var(--bg-primary-opacity-80);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-sm);
+    border: var(--border-width-thin) solid var(--border-light);
+}
+
+.form-group {
+    margin-bottom: var(--margin-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--margin-sm);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: var(--input-padding-y) var(--input-padding-x);
+    border: var(--input-border-width) solid var(--border-light);
+    border-radius: var(--input-radius);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: var(--transition-default);
+    line-height: var(--line-height-normal);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: var(--bg-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-opacity-20);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+    line-height: var(--line-height-relaxed);
+}
+
+.submit-button {
+    background: var(--gradient-primary);
+    color: var(--text-light);
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border: none;
+    border-radius: var(--button-radius);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: var(--transition-default);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+}
+
+.submit-button:hover {
+    box-shadow: var(--shadow-lg);
+    background: var(--gradient-hero);
+}
+
+.submit-button:active {
+    transition: var(--transition-fast);
+}
+
+/* ---------------------- Footer Section ----------------------------------------------------------------------------- */
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--spacing-2xl);
+    margin-top: var(--margin-3xl);
+    box-shadow: 0 calc(var(--spacing-xs) * -1) var(--spacing-md) var(--shadow-dark-opacity-20);
+}
+
+.footer p {
+    margin-bottom: var(--margin-sm);
+    color: var(--text-light);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+}
+
+.footer a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: var(--transition-default);
+}
+
+.footer a:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
+/* ---------------------- SPA Transition Animation ----------------------------------------------------------------------------- */
+#app-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------------------- Responsive Design ----------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: var(--gap-md);
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: var(--gap-md);
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        padding: var(--section-padding-mobile) var(--spacing-lg);
+    }
+
+    .hero h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero p {
+        font-size: var(--font-size-base);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--gap-lg);
+    }
+
+    .content-section {
+        padding: var(--spacing-lg);
+    }
+
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+
+    .main-content {
+        padding: var(--section-padding-mobile) var(--container-padding);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .main-content {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .content-section h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .logo {
+        font-size: var(--font-size-lg);
+    }
+
+    .nav-menu {
+        gap: var(--gap-sm);
+    }
+}
