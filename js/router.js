@@ -4,6 +4,7 @@ class Router {
       home: "fragments/hero.html",
       about: "fragments/about.html",
       services: "fragments/services.html",
+      portfolio: "fragments/portfolio.html",
       contact: "fragments/contact.html",
     };
 
@@ -11,6 +12,7 @@ class Router {
       home: "Coral Estrada Portfolio",
       about: "About - Coral Estrada Portfolio",
       services: "Services - Coral Estrada Portfolio",
+      portfolio: "Portfolio - Coral Estrada Portfolio",
       contact: "Contact - Coral Estrada Portfolio",
     };
 
@@ -142,6 +144,11 @@ class Router {
         e.preventDefault();
         const targetPage = newLink.getAttribute("data-page"); // ✅ Fixed
         this.navigateTo(targetPage);
+        
+        // Close mobile menu if it exists
+        if (typeof closeMobileMenu === 'function') {
+          closeMobileMenu();
+        }
       });
     });
 
@@ -155,6 +162,16 @@ class Router {
 
         newForm.addEventListener("submit", (e) => this.handleContactSubmit(e)); // ✅ Fixed
       }
+    }
+
+    // Initialize Portfolio Modal
+    if (pageName === "portfolio") {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        if (typeof initializePortfolioModal === 'function') {
+          initializePortfolioModal();
+        }
+      }, 50);
     }
   }
 

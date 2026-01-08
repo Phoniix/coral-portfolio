@@ -1,0 +1,137 @@
+<section class="content-section">
+    <h2>Portfolio & Results</h2>
+    <p>Real results for real businesses. Explore how I've helped small businesses and restaurants grow their online presence and connect with more customers.</p>
+</section>
+
+<div class="projects-grid" id="projects-grid">
+    <!-- Example Project 1 -->
+    <div class="project-card" data-project-id="restaurant-abc">
+        <div class="project-image-wrapper">
+            <img src="images/projects/restaurant-abc-thumb.jpg" alt="ABC Restaurant Social Media" class="project-thumbnail">
+            <div class="project-overlay">
+                <span class="view-project-btn">View Details</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>ABC Restaurant</h3>
+            <p class="project-type">Restaurant • Social Media Management</p>
+            <div class="project-metric-highlight">
+                <span class="metric-value">+250%</span>
+                <span class="metric-label">Instagram Followers</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Example Project 2 -->
+    <div class="project-card" data-project-id="cafe-xyz">
+        <div class="project-image-wrapper">
+            <img src="images/projects/cafe-xyz-thumb.jpg" alt="XYZ Cafe Social Media" class="project-thumbnail">
+            <div class="project-overlay">
+                <span class="view-project-btn">View Details</span>
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>XYZ Cafe</h3>
+            <p class="project-type">Cafe • Content Creation</p>
+            <div class="project-metric-highlight">
+                <span class="metric-value">+180%</span>
+                <span class="metric-label">Engagement Rate</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Detail Modal -->
+<div class="project-modal" id="project-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div class="modal-body" id="modal-body">
+            <!-- Content will be dynamically loaded -->
+        </div>
+    </div>
+</div>
+
+<!-- Project Data (can be moved to JS file) -->
+<script type="application/json" id="projects-data">
+{
+  "restaurant-abc": {
+    "name": "ABC Restaurant",
+    "type": "Restaurant",
+    "duration": "6 months",
+    "thumbnail": "images/projects/restaurant-abc-thumb.jpg",
+    "description": "Helped a local family restaurant establish a strong social media presence and attract new customers through strategic content creation and community engagement.",
+    "metrics": {
+      "before": {
+        "followers": 450,
+        "engagement": 2.5
+      },
+      "after": {
+        "followers": 1575,
+        "engagement": 8.2
+      }
+    },
+    "services": [
+      "Social Media Strategy Development",
+      "Content Creation & Photography",
+      "Daily Posting & Scheduling",
+      "Community Management",
+      "Hashtag Research & Optimization",
+      "Monthly Analytics Reports"
+    ],
+    "images": [
+      "images/projects/restaurant-abc-1.jpg",
+      "images/projects/restaurant-abc-2.jpg",
+      "images/projects/restaurant-abc-3.jpg"
+    ],
+    "testimonial": {
+      "text": "Coral transformed our social media presence! We've seen a significant increase in foot traffic, and our engagement has never been better.",
+      "author": "John Smith, Owner"
+    },
+    "results": [
+      "250% increase in Instagram followers",
+      "228% increase in engagement rate",
+      "15-20% increase in weekend reservations"
+    ]
+  },
+  "cafe-xyz": {
+    "name": "XYZ Cafe",
+    "type": "Cafe",
+    "duration": "4 months",
+    "thumbnail": "images/projects/cafe-xyz-thumb.jpg",
+    "description": "Developed a cohesive brand identity and content strategy for a cozy neighborhood cafe, focusing on community building and showcasing daily specials.",
+    "metrics": {
+      "before": {
+        "followers": 320,
+        "engagement": 1.8
+      },
+      "after": {
+        "followers": 1100,
+        "engagement": 5.04
+      }
+    },
+    "services": [
+      "Brand Identity Development",
+      "Visual Content Creation",
+      "Instagram & Facebook Management",
+      "Story Highlights Design",
+      "Event Promotion",
+      "Customer Engagement Strategy"
+    ],
+    "images": [
+      "images/projects/cafe-xyz-1.jpg",
+      "images/projects/cafe-xyz-2.jpg",
+      "images/projects/cafe-xyz-3.jpg"
+    ],
+    "testimonial": {
+      "text": "Working with Coral has been amazing. She understands our brand and creates content that truly represents our cafe's warm, welcoming atmosphere.",
+      "author": "Sarah Johnson, Manager"
+    },
+    "results": [
+      "244% increase in Instagram followers",
+      "180% increase in engagement rate",
+      "Established consistent brand voice"
+    ]
+  }
+}
+</script>
+

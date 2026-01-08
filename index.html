@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coral Estrada Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <!---------------------------------------------- Navigation Section (Header) --------------------------------------------->
     <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link-active" data-page="home">Home</a></li>  <!-- ✅ -->
-                <li><a href="#about" class="nav-link-active" data-page="about">About</a></li>
-                <li><a href="#services" class="nav-link-active" data-page="services">Services</a></li>
-                <li><a href="#contact" class="nav-link-active" data-page="contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="#home" class="nav-link-active" data-page="home">Home</a>
+          </li>
+          <!-- ✅ -->
+          <li>
+            <a href="#about" class="nav-link-active" data-page="about">About</a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link-active" data-page="services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link-active" data-page="portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link-active" data-page="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!---------------------------------------------- Content Section (Dynamically Loaded w/Home page default) ---------------->
-    
 
     <main class="main-content" id="app-content">
-        <!-- Dynamic Page Content to be loaded here... (Refer to router.js & app.js) -->
+      <!-- Dynamic Page Content to be loaded here... (Refer to router.js & app.js) -->
     </main>
 
-<!---------------------------------------------- Footer Section -------------------------------------------------------------->
+    <!---------------------------------------------- Footer Section -------------------------------------------------------------->
 
-<footer class="footer">
-    <p>&copy; 2025 Coral Estrada. All rights reserved</p>
-    <p>Site made by Phoniix&trade; <a href="https://phoniix.up.railway.app/">Get in touch here.</a></p>
-</footer>
+    <footer class="footer">
+      <p>&copy; 2025 Coral Estrada. All rights reserved</p>
+      <p>
+        Site made by Phoniix&trade;
+        <a href="https://phoniix.up.railway.app/">Get in touch here.</a>
+      </p>
+    </footer>
 
-<!-- Email JS Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Email JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<!-- SPA (Single Page App) Scripts -->
-<script src="js/router.js"></script>
-<script src="js/app.js"></script>
-
-
-</body>
+    <!-- SPA (Single Page App) Scripts -->
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
